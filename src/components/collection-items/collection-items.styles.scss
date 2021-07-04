@@ -30,3 +30,39 @@
     }
   }
 }
+
+@media (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .collection-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    margin-bottom: 12vh;
+
+    .image {
+      width: 100%;
+      height: 95%;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5px;
+    }
+
+    .collection-footer {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      .name {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      .price {
+        width: 10%;
+      }
+    }
+  }
+}

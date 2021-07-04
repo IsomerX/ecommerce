@@ -1,4 +1,18 @@
-body{
-    padding: 20px 60px;
-    font-family: 'Open Sans Condensed', sans-serif;
+body {
+  padding: 20px 60px;
+  font-family: "Open Sans Condensed", sans-serif;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  body {
+    padding: 10px 30px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
 }
