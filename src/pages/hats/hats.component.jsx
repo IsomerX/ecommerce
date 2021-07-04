@@ -1,8 +1,14 @@
 import React from "react";
-const HatsPage = () => (
-  <div className="hatspage">
-      <h1>hey, hats page</h1>
-  </div>
-);
+import { Link } from "react-router-dom";
+const HatsPage = (props) => {
+  console.log(props);
+  return (
+    <div className="hatspage">
+      <Link to='/'>click this</Link>
+      <button onClick={()=> props.history.push('/')}>clickedy click</button>
+      <h1>hey, hats page {props.match.params.hatId}</h1>
+    </div>
+  );
+};
 
 export default HatsPage;
